@@ -1,4 +1,4 @@
-此为项目网上资源，在此引用，仅学习使用。
+此为项目网上资源，在此引用，仅学习使用。<br>
 使用说明：
 需要安装的软件：Python2、Redis、MongoDB； 需要安装的Python模块：scrapy、requests、lxml。
 进入cookies.py，填入你的微博账号（已有两个账号示例）。
