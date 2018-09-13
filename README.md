@@ -1,5 +1,5 @@
+此为项目网上资源，在此引用，仅学习使用。
 使用说明：
-
 需要安装的软件：Python2、Redis、MongoDB； 需要安装的Python模块：scrapy、requests、lxml。
 进入cookies.py，填入你的微博账号（已有两个账号示例）。
 进入settings.py，如果你填入的账号足够多，可以将`DOWNLOAD_DELAY = 10` 和 `CONCURRENT_REQUESTS = 1`注释掉。另外可以修改存放种子和去重队列的机器，可以存放在两台不同的机器上面。
@@ -7,20 +7,10 @@
 分布式扩展：将代码拷贝到一台新机器上，运行即可。注意各子爬虫要共用一个去重队列，即将settings.py里面的`FILTER_HOST`设成同一台机的IP。
 
 
-
-
-**Sina_Spider1: 《[新浪微博爬虫分享（一天可抓取 1300 万条数据）](http://blog.csdn.net/bone_ace/article/details/50903178)》**
-<br> **Sina_Spider2: 《[新浪微博分布式爬虫分享](http://blog.csdn.net/bone_ace/article/details/50904718)》**
-<br> **Sina_Spider3: 《[新浪微博爬虫分享（2016年12月01日更新）](http://blog.csdn.net/bone_ace/article/details/53379904)》**
-<br>
-<br>
 Sina_Spider1为单机版本。<br>
 Sina_Spider2在Sina_Spider1的基础上基于scrapy_redis模块实现分布式。<br>
 Sina_Spider3增加了Cookie池的维护，优化了种子队列和去重队列。<br>
 <br>
-三个版本的详细介绍请看各自的博客。
-遇到什么问题请尽量留言，方便后来遇到同样问题的同学查看。也可加一下QQ交流群：<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=a3e1d79f8c7e12b9db5ac680375d7174a91384f288d3ba16e1781c2587872560"><img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="微博爬虫交流群" title="微博爬虫交流群"></a>。
-<br><br><br><br>
  --------------------------------------------------------------------------
 <br>
 20161215更新：
@@ -87,3 +77,4 @@ Sina_Spider3增加了Cookie池的维护，优化了种子队列和去重队列�
 <br>2、图形解锁验证码的破解见博客 [《图形解锁破解（附Python代码）》](http://blog.csdn.net/bone_ace/article/details/71056741) 。微博爬虫的Cookie获取模块请自行更新。
 <br><br>
 <br>
+
